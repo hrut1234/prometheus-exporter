@@ -14,7 +14,8 @@ func CreateHandleFunc(w http.ResponseWriter, r *http.Request, namespace, extraPa
 	p := r.URL.Query()
 
 	target := p.Get("target")
-
+	user := p.Get("user")
+	logger.Debug("user", user, nil)
 	params := make(map[string]string)
 
 	for _, param := range strings.Split(extraParams, ",") {
