@@ -1,5 +1,4 @@
-module github.com/prezhdarov/prometheus-exporter
-
+module github.com/hrut1234/prometheus-exporter
 go 1.23
 
 require (
